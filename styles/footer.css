@@ -1,0 +1,31 @@
+.footer-wrapper {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.footer-wrapper > .footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-wrapper > .footer-text > .column {
+    color: white;
+    display: flex;
+}
+.footer-wrapper > .footer-text > .column p {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.6rem;
+}
+.footer-wrapper > .copyright {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
