@@ -6,6 +6,7 @@
 .dropdown-menu {
     position: relative;
     display: inline-block;
+    align-content: center;
 }
 .dropdown-menu:focus-within > .dropdown-content {
     display: block;
@@ -52,4 +53,11 @@ button {
     font-weight: 400;
     font-style: normal;
     color: white;
+}
+
+@media only screen and (max-width: 614px) {
+    .name h1 {
+        font-weight: 300;
+        font-size: x-large;
+    }
 }
