@@ -13,11 +13,13 @@
     color: white;
     display: flex;
 }
-.footer-wrapper > .footer-text > .column p {
+.footer-wrapper > .footer-text > .column a {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: white;
     padding: 0.6rem;
 }
 .footer-wrapper > .copyright {
