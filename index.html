@@ -20,38 +20,43 @@
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <div class="nav">
-        <div class="dropdown-menu">
-            <button class="icon"><i class="fas fa-bars"></i></button>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='about.html'>About</a></li>
-                    <li><a href='shop.html'>Shop</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="name">
+    <header>
+        <div class="nav">
+            <a href="shop.html">Shop</a>
             <h1>LEATHERWALK</h1>
         </div>
-    </div>
-    <div class="image">
+    </header>
+
+    <div class="container" onclick="toggleSlide(this)">
         <img src="images/IMG_7537.PNG" alt="LTHRWLK">
-    </div>
-    <div class="footer-wrapper">
-        <div class="footer-text">
-            <div class="column">
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-            </div>
-            <div class="column">
-                <a href="https://www.instagram.com/lthrwlk/" target="_blank">Instagram</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-        <div class="copyright">
-            &copy; 2024 &#124; LEATHERWALK &trade; BY LEON OGODO
+        <div class="text"><p>Leatherwalk has been a boot maker since 2023. We are constantly focused on innovation and quality 
+        improvement, primarily drawn from feedback provided by our clients. Shoe making begins with fabric sourcing, followed by 
+        pattern tracing and cutting, then sewing, gluing and binding, and finally, heat casting. <br>Walk forever.</p>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-text">
+                <div class="column">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="column">
+                    <a href="https://www.instagram.com/lthrwlk/" target="_blank">Instagram</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 &#124; LEATHERWALK &trade; BY LEON OGODO
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSlide(container) {
+            container.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

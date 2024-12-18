@@ -1,17 +1,55 @@
 body {
-    margin: 0px;
+    margin: 0;
     background-image: url(../images/Untitled\ design.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: -100px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
-.image img {
-    width: 250px;
-    height: auto;
+.container img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    display: block;
+    position: absolute;
+    left: 0;
+    transition: left 0.5s ease;
+}
+.container .text {
+    font-family: "EB Garamond", serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    transition: left 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container .text p {
+    line-height: 25px;
+    letter-spacing: .3px;
+}
+.container.active img {
+    left: -100%;
+}
+.container.active .text {
+    left: 0;
 }

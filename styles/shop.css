@@ -35,50 +35,39 @@ th, td {
     height: 60px;
     width: 100%;
 }
-.product-section {
+.product-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-wrapper > .product {
     display: grid;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
+    min-width: 200px;
 }
-.product-wrapper {
-    display: flex;
-    gap: 1rem;
-    width: 60rem;
-    padding-bottom: 0.6rem;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
-}
-.product {
-    scroll-snap-align: center;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    width: 15rem;
-    border-radius: 14px;
-}
-.product img {
+.product-wrapper > .product img {
     height: auto;
     width: 15rem;
 }
-
-/* Custom Scrollbar for Webkit Browsers */
-.partner-wrapper::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+.product-wrapper > .product > .product-details {
+    font-family: "EB Garamond", serif;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    margin: 20px;
 }
-.partner-wrapper::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.product-wrapper > .product > .product-details h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
-.partner-wrapper::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 6px;
+.product-wrapper > .product > .product-details h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
-.partner-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #555;
+.product-wrapper > .product > .product-details p {
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 614px) {
@@ -104,18 +93,5 @@ th, td {
     }
     .spacer {
         height: 30px;
-    }
-    .product-wrapper {
-        gap: 0.4rem;
-        width: 16rem;
-        padding-bottom: 0.6rem;
-    }
-    .product {
-        padding: 20px 30px;
-        width: 16rem;
-        border-radius: 14px;
-    }
-    .product img {
-        width: 12rem;
     }
 }
