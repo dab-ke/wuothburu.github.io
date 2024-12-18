@@ -53,3 +53,14 @@ body {
 .container.active .text {
     left: 0;
 }
+
+@media only screen and (max-width: 614px) {
+    .container {
+        width: 250px;
+        height: 250px;
+    }
+    .container .text p {
+        line-height: 20px;
+        letter-spacing: .2px;
+    }
+}
