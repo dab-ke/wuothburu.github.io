@@ -46,6 +46,10 @@ th, td {
     align-items: center;
     justify-content: center;
     min-width: 200px;
+    transition: .5s;
+}
+.product-wrapper > .product:hover {
+    transform: translateY(-10px);
 }
 .product-wrapper > .product img {
     height: auto;
