@@ -4,6 +4,7 @@ header {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
 }
 .nav a {
@@ -22,6 +23,32 @@ header {
     font-weight: 400;
     font-style: normal;
     color: white;
+}
+.nav .currency-switcher #dropdown-toggle {
+    display: none;
+}
+.nav .currency-switcher label span {
+    color: #fff;
+}
+.nav .currency-switcher .currency-dropdown {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.currency-dropdown div {
+    padding: 10px;
+    cursor: pointer;
+}
+.currency-dropdown div:hover {
+    background-color: #f0f0f0;
+}
+.currency-switcher #dropdown-toggle:checked + .button + .currency-dropdown {
+    display: block;
 }
 
 @media only screen and (max-width: 614px) {
