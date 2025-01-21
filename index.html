@@ -59,26 +59,11 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2024 &#124; LEATHERWALK&trade; BY LEON OGODO
+                &copy; 2025 &#124; LEATHERWALK&trade; BY LEON OGODO
             </div>
         </div>
     </footer>
 
-    <script>
-        function toggleSlide(container) {
-            container.classList.toggle('active');
-        }
-
-        const currencyDropdown = document.getElementById('currencyDropdown');
-        const currentCurrency = document.getElementById('currentCurrency');
-
-        currencyDropdown.addEventListener('click', (e) => {
-            if (e.target.dataset.currency) {
-                const currencySymbol = e.target.dataset.symbol;
-                currentCurrency.textContent = e.target.textContent; // Update displayed currency
-                // Here you can also add functionality to update prices on the page
-            }
-        });
-    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -23,7 +23,18 @@
     <header>
         <div class="nav">
             <a href="index.html">Home</a>
-            <h1>LEATHERWALK</h1>
+            <h1><a href="index.html">LEATHERWALK</a></h1>
+            <div class="currency-switcher">
+                <input type="checkbox" id="dropdown-toggle">
+                <label for="dropdown-toggle" class="button"><span id="currentCurrency">🇺🇸 USD $</span></label>
+                <div class="currency-dropdown" id="currencyDropdown">
+                    <div data-currency="USD" data-symbol="$">🇺🇸 USD $</div>
+                    <div data-currency="EUR" data-symbol="€">🇪🇺 EUR €</div>
+                    <div data-currency="GBP" data-symbol="£">🇬🇧 GBP £</div>
+                    <div data-currency="CAN" data-symbol="$">🇨🇦 CAN $</div>
+                    <div data-currency="KES" data-symbol="$">🇰🇪 KES $</div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -266,6 +277,12 @@
         </div>
     </div>
 
+    <div class="buttons">
+        <a href="#" class="btn">For the men</a>
+        <a href="#" class="btn">For the kids</a>
+        <a href="#" class="btn">Collectibles</a>
+    </div>
+
     <div class="spacer"></div>
 
     <div class="product-wrapper">
@@ -309,8 +326,8 @@
         <div class="footer-wrapper">
             <div class="footer-text">
                 <div class="column">
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
                 </div>
                 <div class="column">
                     <a href="https://www.instagram.com/lthrwlk/" target="_blank">Instagram</a>
@@ -318,9 +335,11 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2024 &#124; LEATHERWALK&trade; BY LEON OGODO
+                &copy; 2025 &#124; LEATHERWALK&trade; BY LEON OGODO
             </div>
         </div>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
