@@ -1,0 +1,30 @@
+.locations {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    text-align: center;
+}
+.locations .location-content {
+    display: grid;
+}
+.locations .location-content h2 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.locations .location-content a {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.locations .location-content a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
