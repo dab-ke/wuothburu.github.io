@@ -7,6 +7,31 @@ header {
     align-items: center;
     padding: 1rem;
 }
+.nav .menu {
+    position: relative;
+    display: inline-block;
+}
+.nav .menu .icon {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.nav .menu .icon:hover {
+    cursor: pointer;
+}
+.nav .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 1;
+    height: auto;
+    padding: 20px 10px;
+}
+.nav .menu:focus-within .dropdown-content {
+    display: block;
+}
 .nav a {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
