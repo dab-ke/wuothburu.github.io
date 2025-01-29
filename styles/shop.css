@@ -63,7 +63,7 @@ th, td {
     transition: .5s;
     z-index: -1;
 }
-.buttons .btn:hover::before {
+.buttons .btn:hover::before, .buttons.active::before {
     width: 100%;
 }
 .spacer {

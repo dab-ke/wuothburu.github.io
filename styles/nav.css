@@ -11,25 +11,66 @@ header {
     position: relative;
     display: inline-block;
 }
-.nav .menu .icon {
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    background-color: transparent;
-    color: white;
+.nav .menu .toggle-icon #checkbox {
+    display: none;
 }
-.nav .menu .icon:hover {
-    cursor: pointer;
+.nav .menu .toggle-icon .toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition-duration: .5s;
 }
-.nav .menu .dropdown-content {
+.nav .menu .toggle-icon .toggle .bars {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+.nav .menu .toggle-icon .toggle #bar2 {
+    transition-duration: .2s;
+}
+.nav .menu .toggle-icon .toggle #bar1, #bar3 {
+    width: 70%;
+}
+.nav .menu .toggle-icon #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+.nav .menu .toggle-icon #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+.nav .menu .toggle-icon #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+.nav .menu .toggle-icon #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+.nav .menu .toggle-icon #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+    translate: 100px 0;
+}
+.nav .menu .toggle-icon .dropdown-content {
     display: none;
     position: absolute;
+    top: 40px;
+    left: 0;
     min-width: 250px;
     z-index: 1;
     height: auto;
-    padding: 20px 10px;
+    padding: 10px;
 }
-.nav .menu:focus-within .dropdown-content {
+.nav .menu .toggle-icon #checkbox:checked ~ .dropdown-content {
     display: block;
 }
 .nav a {
@@ -77,6 +118,23 @@ header {
 }
 
 @media only screen and (max-width: 614px) {
+    .nav .menu .toggle-icon .toggle {
+        width: 30px;
+        height: 30px;
+        gap: 6px;
+    }
+    .nav .menu .toggle-icon #checkbox:checked + .toggle {
+        translate: 0;
+    }
+    .nav .menu .toggle-icon .dropdown-content {
+        top: 40px;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+    }
+    .nav .menu .toggle-icon .dropdown-content a {
+        color: black;
+    }
     .nav a {
         font-weight: 300;
         font-size: 1.2rem;

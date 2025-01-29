@@ -23,10 +23,17 @@
     <header>
         <div class="nav">
             <div class="menu">
-                <button class="icon"><i class="fas fa-bars"></i></button>
-                <div class="dropdown-content">
-                    <div><a href="index.html">Home</a></div><br>
-                    <div><a href="locations.html">Locations</a></div>
+                <div class="toggle-icon">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a><br>
+                        <a href="locations.html">Locations</a>
+                    </div>
                 </div>
             </div>
             <h1><a href="index.html">LEATHERWALK</a></h1>
@@ -284,14 +291,14 @@
     </div>
 
     <div class="buttons">
-        <a href="#" class="btn">For the men</a>
-        <a href="#" class="btn">For the kids</a>
-        <a href="#" class="btn">Collectibles</a>
+        <a href="#" class="btn active" data-collection="1">For the men</a>
+        <a href="#" class="btn" data-collection="2">For the kids</a>
+        <a href="#" class="btn" data-collection="3">Collectibles</a>
     </div>
 
     <div class="spacer"></div>
 
-    <div class="product-wrapper">
+    <div class="product-wrapper" data-collection="1">
         <div class="product">
             <img src="images/loafers.png" alt="">
             <div class="product-details">
