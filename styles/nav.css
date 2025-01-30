@@ -89,6 +89,7 @@ header {
     font-weight: 400;
     font-style: normal;
     color: white;
+    margin-left: 35px;
 }
 .nav .currency-switcher #dropdown-toggle {
     display: none;
