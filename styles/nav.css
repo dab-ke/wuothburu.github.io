@@ -24,6 +24,7 @@ header {
     justify-content: center;
     gap: 8px;
     transition-duration: .5s;
+    cursor: pointer;
 }
 .nav .menu .toggle-icon .toggle .bars {
     width: 100%;
