@@ -1,7 +1,8 @@
 body {
     margin: 0px;
-    background-image: url(../images/Untitled\ design.png);
+    background-image: url(../images/shop_image.png);
     background-size: cover;
+    background-position: center;
 }
 .size-chart h2 {
     text-align: center;
@@ -45,7 +46,7 @@ th, td {
     font-size: 1.3rem;
     padding: 0.6rem 0;
     color: white;
-    border: 3px solid #291001;
+    border: 3px solid #9b4a1b;
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
@@ -59,7 +60,7 @@ th, td {
     left: 0;
     width: 0;
     height: 100%;
-    background: #291001;
+    background: #9b4a1b;
     transition: .5s;
     z-index: -1;
 }
@@ -90,6 +91,7 @@ th, td {
     height: 100%;
     width: 15rem;
     object-fit: cover;
+    box-shadow: 0 0 4px 1px rgb(0, 0, 0);
 }
 .product-wrapper > .product > .product-details {
     font-family: "EB Garamond", serif;
