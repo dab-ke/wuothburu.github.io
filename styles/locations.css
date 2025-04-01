@@ -1,12 +1,15 @@
 body {
     margin: 0;
-    background-image: url(../images/bg_image.jpg);
+    background-image: url('https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743504988/bg_image_eglxt2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    will-change: transform; /* Optimize rendering */
+    -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+    -moz-osx-font-smoothing: grayscale;
 }
 .locations {
     display: grid;
