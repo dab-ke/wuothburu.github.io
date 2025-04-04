@@ -95,6 +95,7 @@ th, td {
     width: 15rem;
     object-fit: cover;
     box-shadow: 0 0 4px 1px rgb(0, 0, 0);
+    margin: auto;
 }
 .product-wrapper > .product > .product-details {
     font-family: "EB Garamond", serif;

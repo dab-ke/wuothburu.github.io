@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Initially show only the first collection
+    // Initially show only the second collection
     productWrappers.forEach(wrapper => {
-        if (wrapper.getAttribute("data-collection") !== "1") {
+        if (wrapper.getAttribute("data-collection") !== "2") {
             wrapper.style.display = "none";
         }
     });
