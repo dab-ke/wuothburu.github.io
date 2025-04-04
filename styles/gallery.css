@@ -1,0 +1,78 @@
+body {
+    margin: 0px;
+    background-image: url('https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743504988/bg_image_eglxt2.jpg');
+    background-size: cover;
+    background-position: center;
+    will-change: transform; /* Optimize rendering */
+    -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+    -moz-osx-font-smoothing: grayscale;
+}
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.category-section {
+    padding: 3rem 0;
+}
+.category-section:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+.category-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.category-header h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.category-header p {
+    color: white;
+    /* max-width: 800px; */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.product-grid .product {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.product-grid .product {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.product-grid .product img {
+    height: 100%;
+    width: 15rem;
+    object-fit: cover;
+    box-shadow: 0 0 4px 1px rgb(0, 0, 0);
+    margin: auto;
+}
+.product-grid .product .product-details {
+    font-family: "EB Garamond", serif;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    margin: 20px;
+}
+.product-grid .product .product-details h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.product-grid .product .product-details h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.product-grid .product .product-details p {
+    font-size: 1rem;
+}
