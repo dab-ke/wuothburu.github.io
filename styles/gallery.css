@@ -3,8 +3,9 @@ body {
     background-image: url('https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743504988/bg_image_eglxt2.jpg');
     background-size: cover;
     background-position: center;
-    will-change: transform; /* Optimize rendering */
-    -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+    background-attachment: fixed;
+    will-change: transform; /*Optimize rendering*/
+    -webkit-font-smoothing: antialiased; /*Smoother text rendering*/
     -moz-osx-font-smoothing: grayscale;
 }
 main {
@@ -19,8 +20,13 @@ main {
 }
 
 .category-header {
+    max-width: 500px;
+    margin: 0 auto;
     margin-bottom: 2rem;
     text-align: center;
+    letter-spacing: .3px;
+    line-height: 25px;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .category-header h2 {
@@ -31,7 +37,6 @@ main {
 
 .category-header p {
     color: white;
-    /* max-width: 800px; */
 }
 
 .product-grid {
@@ -44,12 +49,11 @@ main {
     align-items: center;
     justify-content: center;
     min-width: 200px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: .5s;
     cursor: pointer;
 }
-.product-grid .product {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+.product-grid .product:hover {
+    transform: translateY(-10px);
 }
 .product-grid .product img {
     height: 100%;
@@ -75,4 +79,170 @@ main {
 }
 .product-grid .product .product-details p {
     font-size: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+}
+.close:hover {
+    color: #000;
+}
+.modal-body {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.modal-image {
+    flex: 1;
+}
+.modal-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.modal-details {
+    font-family: "EB Garamond", serif;
+    flex: 1;
+}
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.features-list li {
+    margin-bottom: 8px;
+    color: #666;
+}
+.modal-options {
+    margin-bottom: 20px;
+}
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.color-option-large {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.color-option-large.selected {
+    border-color: #9b4a1b;
+}
+.size-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.size-option {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.size-option.selected {
+    background-color: #9b4a1b;
+    color: white;
+    border-color: #9b4a1b;
+}
+.modal-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+.modal-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.quantity-btn {
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.quantity-input {
+    font-family: "EB Garamond", serif;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 8px;
+}
+.add-to-cart-btn {
+    font-family: "EB Garamond", serif;
+    padding: 12px 24px;
+    background-color: #9b4a1b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.add-to-cart-btn:hover {
+    background-color: #7a3814;
+}
+
+@media (max-width: 768px) {
+    main {
+        max-width: 300px;
+    }
+    .category-header {
+        max-width: 300px;
+    }
+    .product-grid .product:hover {
+        transform: translateY(0);
+    }
+    .modal-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        width: 80%;
+    }
 }

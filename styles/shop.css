@@ -3,6 +3,7 @@ body {
     background-image: url('https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743504988/bg_image_eglxt2.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     will-change: transform; /* Optimize rendering */
     -webkit-font-smoothing: antialiased; /* Smoother text rendering */
     -moz-osx-font-smoothing: grayscale;
@@ -74,6 +75,20 @@ th, td {
     height: 60px;
     width: 100%;
 }
+.button a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+}
+.button a:hover {
+    text-decoration: underline;
+}
 .product-wrapper {
     display: flex;
     justify-content: space-around;
@@ -86,6 +101,7 @@ th, td {
     justify-content: center;
     min-width: 200px;
     transition: .5s;
+    cursor: pointer;
 }
 .product-wrapper > .product:hover {
     transform: translateY(-10px);

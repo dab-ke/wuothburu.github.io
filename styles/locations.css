@@ -12,29 +12,21 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 .locations {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     color: white;
-    text-align: center;
 }
 .locations .location-content {
+    text-align: center;
     display: grid;
 }
-.locations .location-content h2 {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 .locations .location-content a {
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px;
     color: white;
+    padding: 10px;
     text-decoration: none;
 }
 .locations .location-content a:hover {
