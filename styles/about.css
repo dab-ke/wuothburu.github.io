@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-image: url('https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743504988/bg_image_eglxt2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    will-change: transform; /* Optimize rendering */
+    -webkit-font-smoothing: antialiased; /* Smoother text rendering */
+    -moz-osx-font-smoothing: grayscale;
+}
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+    font-family: "EB Garamond", serif;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+}
+
+.about-content {
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: .3px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #9b4a1b;
+}
+
+.about-content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #9b4a1b;
+}
+
+.about-content p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem auto;
+    max-width: 800px;
+}
+
+.about-content li {
+    margin-bottom: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about {
+        padding: 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+    }
+} 
