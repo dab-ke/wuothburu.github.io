@@ -51,11 +51,11 @@ main {
 .tables {
     display: flex;
     justify-content: center;
-    color: white;
-    text-align: center;
 }
 table {
     padding: 32px;
+    text-align: center;
+    color: white;
 }
 th, td {
     font-family: "EB Garamond", serif;
@@ -273,5 +273,16 @@ th, td {
     .modal-content {
         margin: 10% auto;
         width: 80%;
+    }
+    .size-chart > .single-table {
+        display: block;
+    }
+    .tables {
+        display: none;
+    }
+    table {
+        padding: 0;
+        display: grid;
+        justify-content: center;
     }
 }
