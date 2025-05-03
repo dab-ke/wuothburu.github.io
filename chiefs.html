@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9b4a1b">
+    <title>FOR THE CHIEFS</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <style>
+        body {
+            background-color: black;
+        }
+        main {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .category-section {
+            padding: 0;
+        }
+        .category-section h2 {
+            color: white;
+            text-align: center;
+        }
+        .category-header {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: .3px;
+            line-height: 25px;
+            text-shadow: 3px 3px 2px rgb(0, 0, 0);
+        }
+        .category-header h2 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        .category-header p {
+            color: white;
+        }
+        .spacer {
+            width: 100%;
+            height: 50px;
+        }
+        .footer-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="menu">
+                <div class="toggle-icon">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                    <div class="dropdown-content">
+                        <a href="men.html">FOR THE MEN</a><br>
+                        <a href="chiefs.html">FOR THE CHIEFS</a><br>
+                        <a href="souvenirs.html">SOUVENIRS</a>
+                    </div>
+                </div>
+            </div>
+            <h1><a href="index.html">LEATHERWALK</a></h1>
+            <div class="currency-switcher">
+                <input type="checkbox" id="dropdown-toggle">
+                <label for="dropdown-toggle" class="button"><span id="currentCurrency">🇰🇪 KSH</span></label>
+                <div class="currency-dropdown" id="currencyDropdown">
+                    <div data-currency="USD" data-symbol="$">🇺🇸 USD</div>
+                    <div data-currency="EUR" data-symbol="€">🇪🇺 EUR</div>
+                    <div data-currency="GBP" data-symbol="£">🇬🇧 GBP</div>
+                    <div data-currency="CAN" data-symbol="$">🇨🇦 CAN</div>
+                    <div data-currency="KES" data-symbol="$">🇰🇪 KSH</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="chiefs" class="category-section">
+            <div class="category-header">
+                <h2>FOR THE CHIEFS</h2>
+                <p>Durable, comfortable, and fun designs that keep up with your little ones. Our kids' collection features shoes that support growing feet while adding a splash of color to their outfits.</p>
+            </div>
+
+            <div class="spacer"></div>
+
+            <h2>COMING SOON</h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-text">
+                <div class="column">
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                </div>
+                <div class="column">
+                    <a href="about.html">About</a>
+                    <a href="https://www.instagram.com/lthrwlk/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 &#124; LEATHERWALK&trade; BY LEON OGODO
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

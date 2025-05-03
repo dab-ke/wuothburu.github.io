@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9b4a1b">
+    <title>SOUVENIRS</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/souvenirs.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="menu">
+                <div class="toggle-icon">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                    <div class="dropdown-content">
+                        <a href="men.html">FOR THE MEN</a><br>
+                        <a href="chiefs.html">FOR THE CHIEFS</a><br>
+                        <a href="souvenirs.html">SOUVENIRS</a>
+                    </div>
+                </div>
+            </div>
+            <h1><a href="index.html">LEATHERWALK</a></h1>
+            <div class="currency-switcher">
+                <input type="checkbox" id="dropdown-toggle">
+                <label for="dropdown-toggle" class="button"><span id="currentCurrency">🇰🇪 KSH</span></label>
+                <div class="currency-dropdown" id="currencyDropdown">
+                    <div data-currency="USD" data-symbol="$">🇺🇸 USD</div>
+                    <div data-currency="EUR" data-symbol="€">🇪🇺 EUR</div>
+                    <div data-currency="GBP" data-symbol="£">🇬🇧 GBP</div>
+                    <div data-currency="CAN" data-symbol="$">🇨🇦 CAN</div>
+                    <div data-currency="KES" data-symbol="$">🇰🇪 KSH</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="chiefs" class="category-section">
+            <div class="category-header">
+                <h2>SOUVENIRS</h2>
+                <p>Durable, comfortable, and fun designs that keep up with your little ones. Our kids' collection features shoes that support growing feet while adding a splash of color to their outfits.</p>
+            </div>
+
+            <div class="product-grid">
+                <div class="product" data-product-id="s1">
+                    <img src="https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743505795/lthrwlk-penny-loafers_cfdmhb.png" alt="leatherwalk brush" loading="lazy">
+                    <div class="product-details">
+                        <h2>Leatherwalk Brush</h2>
+                        <h3>Beige & black</h3>
+                        <p data-base-price="1000">Ksh1,000</p>
+                    </div>
+                </div>
+                <div class="product" data-product-id="s2">
+                    <img src="https://res.cloudinary.com/dab2002/image/upload/v1743505788/lthrwlk-bags_mbbp7e.jpg" alt="leatherwalk bag" loading="lazy">
+                    <div class="product-details">
+                        <h2>Leatherwalk bag</h2>
+                        <h3>Black & dark brown</h3>
+                        <p data-base-price="1000">Ksh1,000</p>
+                    </div>
+                </div>
+                <div class="product" data-product-id="s3">
+                    <img src="https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743505792/lthrwlk-merch-shoes_hfsigm.png" alt="leatherwalk t-shirt" loading="lazy">
+                    <div class="product-details">
+                        <h2>Leatherwalk t-shirts</h2>
+                        <h3>Deep brown</h3>
+                        <p data-base-price="1500">Ksh1,500</p>
+                    </div>
+                </div>
+                <div class="product" data-product-id="s4">
+                    <img src="https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743505787/lthrwlk-bag-light_qrwvqx.png" alt="leatherwalk bag" loading="lazy">
+                    <div class="product-details">
+                        <h2>Leatherwalk bag</h2>
+                        <h3>Beige</h3>
+                        <p data-base-price="1000">Ksh1,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="spacer"></div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-text">
+                <div class="column">
+                    <a href="terms.html">Terms</a>
+                    <a href="privacy.html">Privacy</a>
+                </div>
+                <div class="column">
+                    <a href="locations.html">Locations</a>
+                    <a href="https://www.instagram.com/lthrwlk/" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 &#124; LEATHERWALK&trade; BY LEON OGODO
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/data.js"></script>
+    <script src="script/script.js"></script>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+        </div>
+    </div>
+
+</body>
+</html>
