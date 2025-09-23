@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 footer {
     width: 100%;
 }
@@ -13,8 +15,9 @@ footer {
     display: flex;
 }
 .footer-wrapper > .footer-text > .column a {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
+    font-size: 0.8rem;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
@@ -22,21 +25,21 @@ footer {
     padding: 0.6rem;
 }
 .footer-wrapper > .copyright {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     color: white;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 @media only screen and (max-width: 614px) {
     .footer-wrapper > .footer-text > .column p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 0.4rem;
     }
     .footer-wrapper > .copyright {
-        font-size: 0.65rem;
+        font-size: 0.5rem;
     }
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 body {
     margin: 0px;
     background-color: #691700;
@@ -17,6 +19,7 @@ main {
 }
 
 .category-header {
+    font-family: "Cinzel", serif;
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -38,7 +41,7 @@ main {
 
 .size-chart h2 {
     text-align: center;
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -58,7 +61,7 @@ table {
     padding: 32px;
 }
 th, td {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;
     padding: 8px;
@@ -89,7 +92,7 @@ th, td {
     margin: auto;
 }
 .product-grid .product .product-details {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     color: white;
     text-align: center;
     line-height: 10px;
@@ -153,7 +156,7 @@ th, td {
     border-radius: 4px;
 }
 .modal-details {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     flex: 1;
 }
 .modal-title {
@@ -229,7 +232,7 @@ th, td {
     font-size: 18px;
 }
 .quantity-input {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     width: 50px;
     text-align: center;
     border: none;
@@ -238,7 +241,7 @@ th, td {
     padding: 8px;
 }
 .add-to-cart-btn {
-    font-family: "EB Garamond", serif;
+    font-family: "Cinzel", serif;
     padding: 12px 24px;
     background-color: #9b4a1b;
     color: white;
