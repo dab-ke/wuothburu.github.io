@@ -83,7 +83,7 @@ header {
 .nav a {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.4rem;
     color: white;
@@ -93,10 +93,10 @@ header {
 .nav h1 {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     color: white;
-    margin-left: 35px;
+    margin-left: 28px;
 }
 .nav .currency-switcher #dropdown-toggle {
     display: none;
