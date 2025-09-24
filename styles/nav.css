@@ -98,6 +98,63 @@ header {
     color: white;
     margin-left: 28px;
 }
+:root {
+	--mask-image: url("data:image/svg+xml,%3Csvg width='48' height='20' viewBox='0 0 48 20' fill='none' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.7822 5.99919C18.5342 -0.666396 29.4658 -0.666399 36.2178 5.99919L39.9971 9.73064C42.201 11.9064 45.0919 13.0002 48 13.0002V19.0002C43.5899 19.0002 39.162 17.3376 35.7822 14.0011L32.0029 10.2697C27.5876 5.9108 20.4124 5.9108 15.9971 10.2697L12.2178 14.0011C8.83805 17.3376 4.41008 19.0002 0 19.0002V13.0002C2.90814 13.0002 5.79901 11.9064 8.00293 9.73064L11.7822 5.99919Z' fill='%23111111' /%3E%3C/svg%3E%0A");
+}
+@property --progress {
+	syntax: "<number>";
+	initial-value: 1;
+	inherits: true;
+}
+@keyframes progressAnimation {
+	from {
+		--progress: 0;
+	}
+	to {
+		--progress: 1;
+	}
+}
+u {
+	--scale: 0.15;
+	--sizeX: calc(4.8rem * var(--scale));
+	--sizeY: calc(2rem * var(--scale));
+	--posX: var(--sizeX);
+	--time: calc(2.4s * var(--scale));
+
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+
+	&:hover,
+	&.loop {
+		--progress: 0;
+
+		animation: progressAnimation var(--time) linear infinite;
+
+		&::after {
+			transition-property: none !important;
+		}
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: auto 0 var(--offsetY, 0);
+		margin-inline: auto;
+		display: block;
+		height: var(--sizeY);
+		width: calc(round(down, 50%, var(--sizeX) * 0.5));
+		height: var(--sizeY);
+		background-image: linear-gradient(to right, #fff, #fff);
+        mask-image: var(--mask-image);
+		mask-size: var(--sizeX) var(--sizeY);
+		background-size: 100%;
+		mask-repeat: repeat-x;
+		background-position: 0% 100%;
+		transition: mask-position var(--time) ease-out;
+        mask-position: calc(var(--posX) * var(--progress)) 100%;
+	}
+}
 .nav .currency-switcher #dropdown-toggle {
     display: none;
 }
