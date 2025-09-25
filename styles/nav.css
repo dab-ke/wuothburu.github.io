@@ -124,6 +124,7 @@ u {
 	display: inline-block;
 	position: relative;
 	text-decoration: none;
+    z-index: 1000;
 
 	&:hover,
 	&.loop {
