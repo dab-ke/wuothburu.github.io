@@ -15,6 +15,32 @@
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/men.css">
     <link rel="stylesheet" href="styles/footer.css">
+
+    <style>
+        .shop {
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .shop img {
+            width: 80px;
+            height: auto; 
+            padding-right: 20px;
+        }
+        .shop span {
+            height: 50px; 
+            width: 1px; 
+            background-color: white;
+        }
+        .shop h2 {
+            padding-left: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            .shop span {
+                width: 2px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,9 +54,9 @@
                         <div class="bars" id="bar3"></div>
                     </label>
                     <div class="dropdown-content">
-                        <a href="men.html">FOR THE MEN</a><br>
+                        <a href="#">ACCOUNT</a><br>
+                        <a href="men.html">SHOP</a><br>
                         <a href="chiefs.html">FOR THE CHIEFS</a><br>
-                        <a href="souvenirs.html">SOUVENIRS</a>
                     </div>
                 </div>
             </div>
@@ -52,12 +78,16 @@
     <main>
         <section id="men" class="category-section">
             <div class="category-header">
-                <h2>FOR THE MEN</h2>
+                <h2>SHOP</h2>
                 <!-- <p>Durable, comfortable, and fun designs that keep up with your little ones. Our kids' collection features shoes that support growing feet while adding a splash of color to their outfits.</p> -->
             </div>
 
             <div class="size-chart">
-                <h2>SHOE SIZE CHART</h2>
+                <div class="shop">
+                    <img src="https://res.cloudinary.com/dab2002/image/upload/f_auto,q_auto/v1743507974/IMG_7537_id9mtn.png" alt="">
+                    <span></span>
+                    <h2>SHOE SIZE CHART</h2>
+                </div>
                 <div class="tables">
                     <table class="table1">
                         <th>WUOTHBURU</th>
