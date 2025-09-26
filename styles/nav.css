@@ -223,5 +223,6 @@ u {
     .nav h1 {
         font-weight: 300;
         font-size: x-large;
+        z-index: 1;
     }
 }
